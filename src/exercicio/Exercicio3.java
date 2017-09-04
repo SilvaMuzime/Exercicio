@@ -16,6 +16,10 @@ import java.util.Vector;
 public class Exercicio3 {
     
     static Scanner s = new Scanner(System.in);
+    /**
+     * Metodo que regista estudantes e armazena os dados num Arraylist
+     * @return lista de estudantes
+     */
     
     private static ArrayList<Estudante> registar(){
         ArrayList<Estudante> listaEstudantes = new ArrayList<>();
@@ -43,7 +47,11 @@ public class Exercicio3 {
         return listaEstudantes;
     }
     
-    
+    /**
+     * Metodo que calcula a nota media dos estudantes
+     * @param lista lista de estudantes
+     * @return nota media dos estudantes
+     */
     private static double media(ArrayList<Estudante> lista){
         double media=0;
         for(Estudante e: lista){
@@ -53,7 +61,11 @@ public class Exercicio3 {
         return media;
     }
     
-    
+    /**
+     * Metodo verifica a  maior media obtida na turma
+     * @param lista
+     * @return maior media
+     */
     private static double maiorMedia(ArrayList<Estudante> lista){
         double maior=0;
         for(Estudante e : lista){
@@ -63,6 +75,12 @@ public class Exercicio3 {
         return maior;
     }
     
+    /**
+     * Metodo que mostra os estudantes com a maior media 
+     * @param lista lista de estudantes
+     * @param maior maior media obtida
+     * @return estudantes com a maior media
+     */
     private static ArrayList<Estudante> maiorMedia(ArrayList<Estudante> lista, double maior){
         ArrayList<Estudante> maioresMedias=new ArrayList<>();
         for(Estudante e : lista){

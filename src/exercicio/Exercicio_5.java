@@ -12,6 +12,12 @@ import java.util.Vector;
  * @author silva-muzime
  */
 public class Exercicio_5 {
+    
+    /**
+     * Metodo que ordena um vector de inteiros
+     * @param vector vector a ser ordenado
+     * @return vector ordenando
+     */
     private static Vector<Integer> ordena(Vector<Integer> vector){
         
         Vector<Integer>  vectorOrdenado = new Vector<>();

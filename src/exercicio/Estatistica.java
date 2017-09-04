@@ -14,7 +14,12 @@ import java.util.Vector;
  * @author silva-muzime
  */
 public class Estatistica {
-
+    /**
+     * Metodo que calcula a media de valores 
+     * @param vector vector que contem os dados dos
+     * @param tamanho
+     * @return media
+     */
     private static int media(Vector<Integer> vector, int tamanho) {
         int media = 0;
         for (int n : vector) {
@@ -24,6 +29,12 @@ public class Estatistica {
         return media;
     }
 
+     /**
+     * Metodo que calcula a mediana de valores 
+     * @param vector vector que contem os dados dos
+     * @param tamanho numero de elementos que o vector contem
+     * @return mediana
+     */
     private static int mediana(Vector<Integer> vector, int tamanho) {
         int mediana;
         vector.sort((Integer n1, Integer n2) -> {
@@ -39,6 +50,13 @@ public class Estatistica {
         mediana = vector.get(tamanho / 2);
         return mediana;
     }
+    
+         /**
+     * Metodo que calcula a moda de valores 
+     * @param vector vector que contem os dados dos
+     * @param tamanho numero de elementos que o vector contem
+     * @return moda
+     */
 
     public static int moda(Vector<Integer> vector, int tamanho) {
         int nVezes;

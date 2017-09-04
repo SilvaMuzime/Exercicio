@@ -12,7 +12,12 @@ import java.util.Vector;
  * @author silva-muzime
  */
 public class Exercicio_4 {
-
+    /**
+     * Metodo que compara dois vectores de booleanos 
+     * @param vector1 primeiro vector
+     * @param vector2 segundo vector
+     * @return true-iguais, false-diferentes
+     */
     private static boolean comparador(Vector<Boolean> vector1, Vector<Boolean> vector2) {
         boolean resultado = true;
         if (vector1.size() != vector2.size()) {

@@ -14,7 +14,10 @@ import java.util.Vector;
  * @author silva-muzime
  */
 public class Exercicio_2 {
-
+    /**
+     * Metodo que simula o jogo do galo
+     * @param numeros vector que contem o vector de numeros
+     */
     private static void jogoGalo(Vector<Integer> numeros) {
         Scanner s = new Scanner(System.in);
 
